@@ -1,0 +1,42 @@
+.galleryimg {
+    border: 2px gainsboro solid;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.modalImg {
+    border: 2px gainsboro solid;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.modalVerImg {
+    border: 2px gainsboro solid;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .galleryimg {
+        border: 1px gainsboro solid;
+        padding: 1px;
+        width: 100%;
+        height: 25vh;
+    }
+    .modalImg {
+        border: 2px gainsboro solid;
+        padding: 2px;
+        width: 100%;
+        height: 75vh;
+    }
+    .modalVerImg {
+        border: 2px gainsboro solid;
+        margin-top: 50%;
+        padding: 2px;
+        width: 100%;
+        height: 50%;
+    }
+}

@@ -1,0 +1,24 @@
+<form class="animate__animated animate__fadeIn" [formGroup]="contactForm" (ngSubmit)="send()">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" placeholder="Your name..." formControlName="name" [class.is-invalid]="nameInvalid">
+        <small *ngIf="nameInvalid" class="text-danger">Please, write your name</small>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="example@mydomain.com" formControlName="email" [class.is-invalid]="emailInvalid">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <small *ngIf="emailInvalid" class="text-danger">Email invalid</small>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Subject</label>
+        <input type="text" class="form-control" placeholder="Your subject..." formControlName="subject" [class.is-invalid]="subInvalid">
+        <small *ngIf="subInvalid" class="text-danger">Please, write your subject</small>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="3" placeholder="Your comments..." formControlName="message" [class.is-invalid]="messageInvalid"></textarea>
+        <small *ngIf="messageInvalid" class="text-danger">Please, write your comments</small>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>

@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+<div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner banner">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <img src="../../assets/img/carousel/main1.jpg" class="d-block w-100" alt="../../assets/img/carousel/main.jpg">
+            <div class="carousel-caption d-md-block banner_logo">
+                <hr>
+                <img src="../../assets/img/Logo.png" class="bg-text logo animate__animated animate__flipInX">
+                <p class="lead animate__animated animate__shakeY" style="color:black"><strong>Residential Glass Restoration</strong></p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+            <img src="../../assets/img/carousel/main.jpg" class="d-block w-100" alt="../../assets/img/carousel/main.jpg">
+            <div class="carousel-caption d-md-block banner_logo">
+                <hr>
+                <img src="../../assets/img/Logo.png" class="bg-text logo animate__animated animate__fadeIn">
+                <p class="lead animate__animated animate__fadeIn" style="color:black"><strong>Home Glass Restoration</strong></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../../assets/img/carousel/main2.jpg" class="d-block w-100" alt="../../assets/img/carousel/main2.jpg">
+            <div class="carousel-caption d-md-block banner_logo">
+                <hr>
+                <img src="../../assets/img/Logo.png" class="bg-text logo animate__animated animate__fadeIn">
+                <p class="lead animate__animated animate__fadeIn" style="color:black; text-shadow: white;"><strong>Windows Glass Restoration</strong></p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+</div>
+<div class="jumbotron jumbotron-fluid bg-light container-fluid animate__animated animate__fadeIn">
+    <br>
+    <div class="container" style="text-align: justify;">
+        <p class="display-6 lead text-justify">We are a windows installation company in that specializes in providing quality service at competitive prices for any home window job in the Dallas/Fort Worth, Texas area.</p>
+        <hr>
+        <p class="display-6 lead text-justify">Our expertise in this field is exceptional - just think of us as your window contractor professionals.
+            <i class="fas fa-phone"></i> Call us: <a href="tel:{{phoneen}}" style="text-decoration: none;">{{phoneen | slice:0:3}}-{{phoneen | slice:3:6}}-{{phoneen | slice:6:10}}</a> or <a href="#contact" style="text-decoration: none;">write us</a> for
+            more information.</p>
+    </div>
+    <br>
+</div>
+<app-ourservice></app-ourservice>
+<app-about></app-about>
+<div class="" id="gallery">
+    <div class="text-center" style="border: none;">
+        <p class="display-6 lead">Gallery</p>
+    </div>
+    <app-gallery></app-gallery>
+</div>
+<div class="card m-5" id="contact" style="border: none;">
+    <p class="display-6 lead">Contact</p>
+    <div class="row g-0">
+        <div class="col-md-4">
+            <app-contact></app-contact>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <app-gmap></app-gmap>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="m-5 animate__animated animate__fadeIn" id="comments">
+    <app-comments></app-comments>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,24 @@
+<iframe class="w-100" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMvICuvAsK-QFrslCk2KagQM3VUAkdpsg&q=Brothers+Ojeda+Window+Glass+Restoration&zoom=8" allowfullscreen></iframe>
+<div class="container-fluid">
+    <table class="table">
+        <thead>
+            <th>Phone<i class="fas fa-phone"></i></th>
+            <th>Adress<i class="fas fa-map-marker"></i></th>
+            <th>Zip<i class="fas fa-envelope"></i></th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="col">
+                        <a href="tel:{{phoneen}}" style="text-decoration: none;">{{phoneen | slice:0:3}}-{{phoneen | slice:3:6}}-{{phoneen | slice:6:10}}</a>
+                    </div>
+                    <!-- <div class="col">
+                        <a href="tel:{{phone}}" style="text-decoration: none;">{{phone | slice:0:3}}-{{phone | slice:3:6}}-{{phone | slice:6:10}}</a>
+                    </div> -->
+                </td>
+                <td>{{address}}</td>
+                <td>{{zip}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
